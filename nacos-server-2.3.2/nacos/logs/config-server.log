@@ -1,0 +1,134 @@
+2024-10-18 13:46:06,566 INFO notifyConnectTimeout:100
+
+2024-10-18 13:46:06,572 INFO notifySocketTimeout:200
+
+2024-10-18 13:46:06,572 INFO isHealthCheck:true
+
+2024-10-18 13:46:06,572 INFO maxHealthCheckFailCount:12
+
+2024-10-18 13:46:06,572 INFO maxContent:10485760
+
+2024-10-18 13:46:14,047 WARN DumpService start
+
+2024-10-18 13:46:14,048 INFO start clear all config-info.
+
+2024-10-18 13:46:14,100 INFO clear all config-info success.
+
+2024-10-18 13:46:14,101 INFO clear all config-info-tenant success.
+
+2024-10-18 13:46:14,121 ERROR An error occurred while executing method [findConfigMaxId].
+ Parameters: [].
+
+java.lang.IllegalStateException: No DataSource set
+	at org.springframework.util.Assert.state(Assert.java:76)
+	at org.springframework.jdbc.support.JdbcAccessor.obtainDataSource(JdbcAccessor.java:86)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:378)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:468)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:478)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:511)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:518)
+	at com.alibaba.nacos.config.server.service.repository.extrnal.ExternalConfigInfoPersistServiceImpl.findConfigMaxId(ExternalConfigInfoPersistServiceImpl.java:684)
+	at com.alibaba.nacos.config.server.service.repository.extrnal.ExternalConfigInfoPersistServiceImpl$$FastClassBySpringCGLIB$$a645f555.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at com.alibaba.nacos.config.server.service.repository.extrnal.ExternalConfigInfoPersistServiceImpl$$EnhancerBySpringCGLIB$$321200a2.findConfigMaxId(<generated>)
+	at com.alibaba.nacos.config.server.service.dump.processor.DumpAllProcessor.process(DumpAllProcessor.java:62)
+	at com.alibaba.nacos.config.server.service.dump.DumpService.dumpAllConfigInfoOnStartup(DumpService.java:331)
+	at com.alibaba.nacos.config.server.service.dump.DumpService.dumpOperate(DumpService.java:265)
+	at com.alibaba.nacos.config.server.service.dump.ExternalDumpService.init(ExternalDumpService.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:224)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:929)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
+	at com.alibaba.nacos.Nacos.main(Nacos.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:467)
+2024-10-18 13:46:56,817 INFO notifyConnectTimeout:100
+
+2024-10-18 13:46:56,821 INFO notifySocketTimeout:200
+
+2024-10-18 13:46:56,821 INFO isHealthCheck:true
+
+2024-10-18 13:46:56,821 INFO maxHealthCheckFailCount:12
+
+2024-10-18 13:46:56,821 INFO maxContent:10485760
+
+2024-10-18 13:47:02,755 WARN DumpService start
+
+2024-10-18 13:47:02,755 INFO start clear all config-info.
+
+2024-10-18 13:47:02,756 INFO clear all config-info success.
+
+2024-10-18 13:47:02,757 INFO clear all config-info-tenant success.
+
+2024-10-18 13:47:02,784 INFO All dump page size is set to 50 according to mem limit 512 MB
+
+2024-10-18 13:47:02,785 INFO start dump all config-info...
+
+2024-10-18 13:47:02,812 INFO [all-dump] submit all task for 25 / 25, dbTime=24,diskTime=3
+
+2024-10-18 13:47:02,812 INFO [all-dump] wait 13 dump tasks to be finished
+
+2024-10-18 13:47:03,813 INFO success to  dump all config-info。
+
+2024-10-18 13:47:03,814 INFO start clear all config-info-beta.
+
+2024-10-18 13:47:03,814 INFO clear all config-info-beta success.
+
+2024-10-18 13:47:03,814 INFO clear all config-info-beta-tenant success.
+
+2024-10-18 13:47:03,816 INFO start clear all config-info-tag.
+
+2024-10-18 13:47:03,816 INFO clear all config-info-tag success.
+
+2024-10-18 13:47:03,817 INFO clear all config-info-tag-tenant success.
+

@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: order-service
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+        server-addr: ${nacos.server-address}
+        group: ${nacos.group}
+        file-extension: ${nacos.file-extension}
+        name: order-service-${spring.profiles.active}.yaml
+        username: ${nacos.username}
+        password: ${nacos.password}
+        shared-configs:
+          - dataId: common-service-${spring.profiles.active}.yaml
+            group: ${nacos.group}
+            refresh: true

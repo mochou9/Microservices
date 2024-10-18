@@ -1,0 +1,226 @@
+2024-10-18 13:46:14,235 ERROR [TASK-FAILED] java.lang.InterruptedException
+
+java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1638)
+	at java.base/java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:420)
+	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
+2024-10-18 13:46:14,235 ERROR [TASK-FAILED] java.lang.InterruptedException
+
+java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1638)
+	at java.base/java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:420)
+	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
+2024-10-18 13:46:14,235 ERROR [TASK-FAILED] java.lang.InterruptedException
+
+java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1638)
+	at java.base/java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:420)
+	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
+2024-10-18 13:46:14,235 ERROR [TASK-FAILED] java.lang.InterruptedException
+
+java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1638)
+	at java.base/java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:420)
+	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
+2024-10-18 13:46:14,235 ERROR [TASK-FAILED] java.lang.InterruptedException
+
+java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1638)
+	at java.base/java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:420)
+	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
+2024-10-18 13:46:14,235 ERROR [TASK-FAILED] java.lang.InterruptedException
+
+java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1638)
+	at java.base/java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:420)
+	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
+2024-10-18 13:47:04,922 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2024-10-18 13:47:04,922 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2024-10-18 13:47:04,924 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2024-10-18 13:47:04,924 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2024-10-18 13:47:07,882 INFO Load instance extension handler []
+
+2024-10-18 13:47:44,919 INFO Client connection 1729230464909_127.0.0.1_53572 connect
+
+2024-10-18 13:47:44,943 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='order-service', ephemeral=true, revision=0}, 1729230464909_127.0.0.1_53572
+
+2024-10-18 13:47:46,141 INFO Client connection 1729230466128_127.0.0.1_53587 connect
+
+2024-10-18 13:47:46,164 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='user-service', ephemeral=true, revision=0}, 1729230466128_127.0.0.1_53587
+
+2024-10-18 13:47:49,951 INFO Client connection 1729230469944_127.0.0.1_53592 connect
+
+2024-10-18 13:47:49,962 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='product-service', ephemeral=true, revision=0}, 1729230469944_127.0.0.1_53592
+
+2024-10-18 14:17:56,647 INFO Client connection 1729232276498_127.0.0.1_57575 connect
+
+2024-10-18 14:17:56,680 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=0}, 1729232276498_127.0.0.1_57575
+
+2024-10-18 14:17:59,180 INFO Client connection 1729232276498_127.0.0.1_57575 disconnect, remove instances and subscribers
+
+2024-10-18 14:19:36,614 WARN namespace : public, [DEFAULT_GROUP@@gateway-service] services are automatically cleaned
+
+2024-10-18 14:31:47,869 INFO Client connection 1729233107767_127.0.0.1_59839 connect
+
+2024-10-18 14:31:47,899 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=0}, 1729233107767_127.0.0.1_59839
+
+2024-10-18 14:31:50,161 INFO Client connection 1729233107767_127.0.0.1_59839 disconnect, remove instances and subscribers
+
+2024-10-18 14:33:36,725 WARN namespace : public, [DEFAULT_GROUP@@gateway-service] services are automatically cleaned
+
+2024-10-18 14:34:00,659 INFO Client connection 1729233240528_127.0.0.1_60297 connect
+
+2024-10-18 14:34:00,690 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=0}, 1729233240528_127.0.0.1_60297
+
+2024-10-18 14:43:26,445 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=1}, 1729233240528_127.0.0.1_60297
+
+2024-10-18 14:43:26,456 INFO Client connection 1729233240528_127.0.0.1_60297 disconnect, remove instances and subscribers
+
+2024-10-18 14:43:39,830 INFO Client connection 1729233819706_127.0.0.1_62187 connect
+
+2024-10-18 14:43:39,866 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=2}, 1729233819706_127.0.0.1_62187
+
+2024-10-18 14:47:29,862 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=3}, 1729233819706_127.0.0.1_62187
+
+2024-10-18 14:47:29,872 INFO Client connection 1729233819706_127.0.0.1_62187 disconnect, remove instances and subscribers
+
+2024-10-18 14:47:41,547 INFO Client connection 1729234061389_127.0.0.1_62813 connect
+
+2024-10-18 14:47:41,588 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=4}, 1729234061389_127.0.0.1_62813
+
+2024-10-18 14:51:47,991 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=5}, 1729234061389_127.0.0.1_62813
+
+2024-10-18 14:51:48,004 INFO Client connection 1729234061389_127.0.0.1_62813 disconnect, remove instances and subscribers
+
+2024-10-18 14:52:02,016 INFO Client connection 1729234321900_127.0.0.1_63329 connect
+
+2024-10-18 14:52:02,058 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=6}, 1729234321900_127.0.0.1_63329
+
+2024-10-18 14:53:26,472 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=7}, 1729234321900_127.0.0.1_63329
+
+2024-10-18 14:53:26,483 INFO Client connection 1729234321900_127.0.0.1_63329 disconnect, remove instances and subscribers
+
+2024-10-18 14:53:36,348 INFO Client connection 1729234416246_127.0.0.1_63727 connect
+
+2024-10-18 14:53:36,378 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=8}, 1729234416246_127.0.0.1_63727
+
+2024-10-18 14:53:38,638 INFO Client connection 1729234416246_127.0.0.1_63727 disconnect, remove instances and subscribers
+
+2024-10-18 14:55:32,229 INFO Client connection 1729234532101_127.0.0.1_64636 connect
+
+2024-10-18 14:55:32,263 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=10}, 1729234532101_127.0.0.1_64636
+
+2024-10-18 14:55:34,561 INFO Client connection 1729234532101_127.0.0.1_64636 disconnect, remove instances and subscribers
+
+2024-10-18 14:56:36,904 WARN namespace : public, [DEFAULT_GROUP@@gateway-service] services are automatically cleaned
+
+2024-10-18 14:58:06,539 INFO Client connection 1729234686427_127.0.0.1_65048 connect
+
+2024-10-18 14:58:06,573 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=0}, 1729234686427_127.0.0.1_65048
+
+2024-10-18 14:59:17,041 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=1}, 1729234686427_127.0.0.1_65048
+
+2024-10-18 14:59:17,051 INFO Client connection 1729234686427_127.0.0.1_65048 disconnect, remove instances and subscribers
+
+2024-10-18 14:59:27,925 INFO Client connection 1729234767810_127.0.0.1_65430 connect
+
+2024-10-18 14:59:27,956 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=2}, 1729234767810_127.0.0.1_65430
+
+2024-10-18 15:00:17,198 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=3}, 1729234767810_127.0.0.1_65430
+
+2024-10-18 15:00:17,208 INFO Client connection 1729234767810_127.0.0.1_65430 disconnect, remove instances and subscribers
+
+2024-10-18 15:00:27,965 INFO Client connection 1729234827842_127.0.0.1_49839 connect
+
+2024-10-18 15:00:27,996 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=4}, 1729234827842_127.0.0.1_49839
+
+2024-10-18 15:00:35,727 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=5}, 1729234827842_127.0.0.1_49839
+
+2024-10-18 15:00:35,738 INFO Client connection 1729234827842_127.0.0.1_49839 disconnect, remove instances and subscribers
+
+2024-10-18 15:00:46,549 INFO Client connection 1729234846408_127.0.0.1_49875 connect
+
+2024-10-18 15:00:46,580 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=6}, 1729234846408_127.0.0.1_49875
+
+2024-10-18 15:02:43,660 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=7}, 1729234846408_127.0.0.1_49875
+
+2024-10-18 15:02:43,669 INFO Client connection 1729234846408_127.0.0.1_49875 disconnect, remove instances and subscribers
+
+2024-10-18 15:02:55,058 INFO Client connection 1729234974940_127.0.0.1_50756 connect
+
+2024-10-18 15:02:55,087 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=8}, 1729234974940_127.0.0.1_50756
+
+2024-10-18 15:07:53,586 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=9}, 1729234974940_127.0.0.1_50756
+
+2024-10-18 15:07:53,602 INFO Client connection 1729234974940_127.0.0.1_50756 disconnect, remove instances and subscribers
+
+2024-10-18 15:08:04,244 INFO Client connection 1729235284138_127.0.0.1_51802 connect
+
+2024-10-18 15:08:04,276 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=10}, 1729235284138_127.0.0.1_51802
+
+2024-10-18 15:08:06,527 INFO Client connection 1729235284138_127.0.0.1_51802 disconnect, remove instances and subscribers
+
+2024-10-18 15:08:54,821 INFO Client connection 1729235334697_127.0.0.1_51917 connect
+
+2024-10-18 15:08:54,856 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=12}, 1729235334697_127.0.0.1_51917
+
+2024-10-18 15:40:58,511 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=13}, 1729235334697_127.0.0.1_51917
+
+2024-10-18 15:40:58,523 INFO Client connection 1729235334697_127.0.0.1_51917 disconnect, remove instances and subscribers
+
+2024-10-18 15:41:13,053 INFO Client connection 1729237272935_127.0.0.1_56612 connect
+
+2024-10-18 15:41:13,085 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=14}, 1729237272935_127.0.0.1_56612
+
+2024-10-18 15:41:47,099 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=15}, 1729237272935_127.0.0.1_56612
+
+2024-10-18 15:41:47,109 INFO Client connection 1729237272935_127.0.0.1_56612 disconnect, remove instances and subscribers
+
+2024-10-18 15:41:57,241 INFO Client connection 1729237317143_127.0.0.1_56675 connect
+
+2024-10-18 15:41:57,278 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=16}, 1729237317143_127.0.0.1_56675
+
+2024-10-18 15:52:10,906 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=17}, 1729237317143_127.0.0.1_56675
+
+2024-10-18 15:52:10,916 INFO Client connection 1729237317143_127.0.0.1_56675 disconnect, remove instances and subscribers
+
+2024-10-18 15:52:24,117 INFO Client connection 1729237944002_127.0.0.1_58416 connect
+
+2024-10-18 15:52:24,154 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=18}, 1729237944002_127.0.0.1_58416
+
+2024-10-18 15:53:45,576 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=19}, 1729237944002_127.0.0.1_58416
+
+2024-10-18 15:53:45,585 INFO Client connection 1729237944002_127.0.0.1_58416 disconnect, remove instances and subscribers
+
+2024-10-18 15:53:56,819 INFO Client connection 1729238036708_127.0.0.1_58629 connect
+
+2024-10-18 15:53:56,853 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=20}, 1729238036708_127.0.0.1_58629
+
+2024-10-18 16:04:25,686 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=21}, 1729238036708_127.0.0.1_58629
+
+2024-10-18 16:04:25,696 INFO Client connection 1729238036708_127.0.0.1_58629 disconnect, remove instances and subscribers
+
+2024-10-18 16:04:39,406 INFO Client connection 1729238679298_127.0.0.1_60542 connect
+
+2024-10-18 16:04:39,441 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=22}, 1729238679298_127.0.0.1_60542
+
+2024-10-18 16:16:00,866 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=23}, 1729238679298_127.0.0.1_60542
+
+2024-10-18 16:16:00,879 INFO Client connection 1729238679298_127.0.0.1_60542 disconnect, remove instances and subscribers
+
+2024-10-18 16:16:19,709 INFO Client connection 1729239379573_127.0.0.1_63173 connect
+
+2024-10-18 16:16:19,747 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=24}, 1729239379573_127.0.0.1_63173
+
+2024-10-18 16:19:44,236 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=25}, 1729239379573_127.0.0.1_63173
+
+2024-10-18 16:19:44,245 INFO Client connection 1729239379573_127.0.0.1_63173 disconnect, remove instances and subscribers
+
+2024-10-18 16:19:57,089 INFO Client connection 1729239596964_127.0.0.1_64082 connect
+
+2024-10-18 16:19:57,121 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='gateway-service', ephemeral=true, revision=26}, 1729239596964_127.0.0.1_64082
+

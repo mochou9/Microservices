@@ -20,7 +20,7 @@
         <dependency>
             <groupId>top.yun</groupId>
             <artifactId>api-service</artifactId>
-            <version>1.0</version>
+            <version>${api-service.version}</version>
         </dependency>
 
         <dependency>
@@ -36,6 +36,18 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>top.yun.cloud</groupId>
+            <artifactId>api-service</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>top.yun.cloud</groupId>
+            <artifactId>common-service</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 
