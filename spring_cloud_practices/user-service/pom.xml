@@ -17,11 +17,7 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>top.yun</groupId>
-            <artifactId>spring-cloud-practice</artifactId>
-            <version>1.0</version>
-        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

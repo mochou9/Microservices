@@ -3,7 +3,7 @@ spring:
     gateway:
       discovery:
         locator:
-          enabled: true
+          enabled: true #服务发现机制
       routes:
         - id: order_route #路由的唯一标识
           order: 1 #路由匹配顺序，数字越小优先级越高
@@ -17,7 +17,7 @@ spring:
             - JDK=17
           filters:
             - StripPrefix=2 #转发路由的时候，去掉前缀2层路径 /order/service
-            - InvalidParameter=token,0 #当token值为指定的时就会被拦截
+            - InvalidParameter=token,999 #当token值为指定的时就会被拦截
 
         - id: product_route #路由的唯一标识
           order: 1 #路由匹配顺序，数字越小优先级越高
@@ -36,4 +36,4 @@ spring:
         fallback:
           mode: response
           response-status: 500
-          response-body: '{"code": 500, "msg": "网关流量超量!"'
+          response-body: '{"code": 500, "msg": "网关流量超量!"}'

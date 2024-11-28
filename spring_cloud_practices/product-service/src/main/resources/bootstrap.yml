@@ -9,6 +9,7 @@ spring:
         server-addr: ${nacos.server-address}
         group: ${nacos.group}
         file-extension: ${nacos.file-extension}
+        name: order-service-${spring.profiles.active}.yaml
         username: ${nacos.username}
         password: ${nacos.password}
         shared-configs:
